@@ -1,0 +1,1083 @@
+@charset "utf-8";
+
+@import "normalize";
+@import "colours";
+
+body {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 9vw;
+  position: absolute;
+  font-weight: 100;
+  margin: 0px 8vw;
+}
+
+h1.tas-heading-white {
+  color: $tas-colour-white;
+}
+
+h1.tas-heading-main {
+  font-size: 13vw;
+  margin: 5vw 8vw;
+  z-index: 2;
+}
+
+h1.tas-services-hair-heading, h1.tas-services-beauty-heading {
+  z-index: 2;
+}
+
+h2 {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+p {
+  font-size: 10px;
+  line-height: 12px;
+}
+
+p.black {
+  color: $tas-colour-black;
+}
+
+h3 {
+  @extend p
+}
+
+p.tas-email-standalone {
+  z-index: 2;
+  position: absolute;
+  margin: 0px 8vw;
+  color: $tas-colour-white;
+  right: 0;
+  top: 1vw;
+  font-size: 8px;
+  transition: color 0.3s;
+}
+
+p.tas-email-standalone:hover {
+  color: $tas-colour-pink;
+}
+
+svg {
+  transition: fill 0.3s;
+}
+
+.tas-section {
+  position: relative;
+}
+
+.tas-rotation-container {
+  display: flex;
+  flex-direction: row;
+  width: 201vw;
+  z-index: 1;
+}
+
+.tas-section-left, .tas-dividing-line, .tas-section-right {
+  padding-top: 60vw;
+  height: 200vw;
+}
+
+.tas-section-left {
+  order: 1;
+  background-color: $tas-colour-black;
+  width: 100vw;
+  color: $tas-colour-black;
+}
+
+.tas-section-left .tas-box-small {
+  background-color: $tas-colour-white;
+  background-image: url('../images/tas-box-background-small-white.png');
+  background-size: cover;
+}
+
+.tas-section-left .tas-box-large {
+  background-color: $tas-colour-white;
+  background-image: url('../images/tas-box-background-large-white.png');
+  background-size: cover;
+}
+
+.tas-section-left .tas-box-ghost {
+  background-color: $tas-colour-black;
+  background-image: none;
+}
+
+.tas-section-left h1 {
+  color: $tas-colour-white;
+}
+
+.tas-dividing-line {
+  order: 2;
+  background-color: $tas-colour-pink;
+  width: 1vw;
+}
+
+.tas-section-right {
+  order: 3;
+  background-color: $tas-colour-white;
+  width: 100vw;
+  color: $tas-colour-white;
+}
+
+.tas-section-right .tas-box-small {
+  background-color: $tas-colour-black;
+  background-image: url('../images/tas-box-background-small-black.png');
+  background-size: cover;
+}
+
+.tas-section-right .tas-box-large {
+  background-color: $tas-colour-black;
+  background-image: url('../images/tas-box-background-large-black.png');
+  background-size: cover;
+}
+
+.tas-section-right .tas-box-ghost {
+  background-color: $tas-colour-white;
+  background-image: none;
+}
+
+.tas-section-right .tas-box-pink {
+  background-color: $tas-colour-pink;
+}
+
+.tas-section-right h1 {
+  color: $tas-colour-black;
+}
+
+.tas-column {
+  height: 100vw;
+  width: 17.32vw;
+}
+
+.tas-column-a {
+  float: right;
+}
+
+.tas-column-b {
+  float: left;
+}
+
+.tas-box h2 {
+  margin: 0px;
+  text-align: center;
+}
+
+.tas-box h2:hover {
+  color: $tas-colour-pink;
+}
+
+.tas-box.tas-box-split-menu h2:hover {
+  color: $tas-colour-black;
+}
+
+.tas-box svg:hover {
+  fill: $tas-colour-pink;
+}
+
+.tas-box-small {
+  width: 17.32vw;
+  height: 17.32vw;
+}
+
+.tas-box-large {
+  width: 34.64vw;
+  height: 34.64vw;
+}
+
+.tas-box-extra-large {
+  width: 68.28vw;
+  height: 67.28vw;
+  background-color: $tas-colour-white;
+  background-image: url(../images/tas-box-background-extra-large.png);
+  background-size: cover;
+  border: 1vw solid $tas-colour-pink;
+}
+
+.tas-box-extra-large-google-map {
+  overflow: hidden;
+  background-color: $tas-colour-black;
+  background-image: none;
+}
+
+.tas-box-telephone-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.tas-box-split-container {
+  position: relative;
+}
+
+.tas-section-right .tas-box-split-menu {
+  background-color: $tas-colour-pink;
+  background-image: url(../images/tas-box-background-large-empty.png);
+  background-size: cover;
+}
+
+.tas-box-text-container-small.tas-box-split h2, .tas-box-text-container-small.tas-box-split svg {
+  margin: 4vw 0vw;
+}
+
+.tas-box-text-container-large.tas-box-split h2, .tas-box-text-container-large.tas-box-split svg {
+  margin: 6px 0vw;
+}
+
+.tas-box-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tas-box-text-container-small {
+  height: 16.42vw;
+  width: 16.42vw;
+  transform: translate(-3.55vw, -3.55vw) rotate(-45deg);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  padding: 4vw;
+}
+
+.tas-rotation-container-reverse .tas-box-text-container-small {
+  transform: translate(-3.55vw, -3.55vw) rotate(45deg);
+}
+
+.tas-box-text-container-large {
+  height: 32.84vw;
+  width: 32.84vw;
+  transform: translate(-7.1vw, -7.1vw) rotate(-45deg);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  padding: 8vw;
+}
+
+.tas-box-text-container-extra-large {
+  height: 65.68vw;
+  width: 65.68vw;
+  transform: translate(-14.2vw, -14.2vw) rotate(-45deg);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  padding: 16vw;
+}
+
+.tas-box-text-container-extra-large.tas-box-text-container-google-map {
+  height: 96vw;
+  width: 97.68vw;
+  padding: 0px;
+  position: relative;
+  clip-path: none;
+}
+
+.tas-rotation-container-reverse .tas-box-text-container-large {
+  transform: translate(-7.1vw, -7.1vw) rotate(45deg);
+}
+
+.tas-box-text-container-large h2 {
+  font-size: 20px;
+}
+
+.tas-box-text-container-small h2,
+.tas-box-split h2,  {
+  font-size: 10px;
+}
+
+.tas-box-split.tas-box-split-exception h2 {
+  font-size: 20px;
+}
+
+.tas-box-text-container-small p {
+  font-size: 10px;
+  margin: 0;
+  text-align: center;
+}
+
+.tas-box-split.tas-box-split-menu h2, {
+  font-size: 20px;
+}
+
+.tas-box-text-container-testimonial {
+  height: 14.84vw;
+  width: 28.84vw;
+  padding: 17vw 10vw;
+  text-align: center;
+}
+
+.tas-box-text-container-testimonial:hover {
+  color: $tas-colour-pink;
+  transition: color 0.3s;
+}
+
+.tas-box-text-container-testimonial p {
+  font-size: 8px;
+  line-height: 9px;
+  margin: 0px;
+}
+
+.tas-menu-section {
+  width: 100%;
+  height: 98.85vw;
+  overflow: hidden;
+}
+
+.tas-menu-section .tas-rotation-container {
+  transform: translate(-76.1vw, -55.6vw) rotate(45deg);
+}
+
+.tas-social-icon {
+  fill: $tas-colour-black;
+}
+
+.tas-menu-section .tas-social-icon, .tas-contact-section .tas-social-icon {
+  height: 8vw;
+  width: 8vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a.tas-social-media-link {
+  text-align: center;
+}
+
+.tas-phone-icon {
+  height: 6vw;
+  width: 6vw;
+  fill: $tas-colour-white;
+  transform: rotate(-62deg);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tas-services-section {
+
+}
+
+.tas-services-hair {
+  position: relative;
+  width: 100%;
+  height: 98.85vw;
+  overflow: hidden;
+}
+
+.tas-services-hair .tas-rotation-container {
+  transform: translate(-38.35vw, -67.9vw) rotate(-45deg);
+}
+
+.tas-services-hair h1 {
+  margin: 0px 17vw;
+}
+
+.tas-services-beauty {
+  position: relative;
+  width: 100%;
+  height: 98.85vw;
+  overflow: hidden;
+}
+
+.tas-services-beauty .tas-rotation-container {
+  transform: translate(-63.8vw, -67.8vw) rotate(45deg);
+}
+
+.tas-services-packages {
+  position: relative;
+  width: 100%;
+  height: 98.85vw;
+  overflow: hidden;
+}
+
+.tas-services-packages .tas-rotation-container {
+  transform: translate(-38.35vw, -67.9vw) rotate(-45deg);
+}
+
+.tas-box-description {
+  position: absolute;
+  top: 35vw;
+  background-color: rgba(225, 15, 115, 0.95);
+  height: 150vw;
+  width: 75vw;
+  color: $tas-colour-white;
+  transition-property: left right;
+  transition-duration: 0.5s;
+}
+
+.tas-box-description-hair-left, .tas-box-description-beauty-left, .tas-box-description-packages-offers-left {
+  left: -50vw;
+}
+
+.tas-box-description-hair-right, .tas-box-description-beauty-right, .tas-box-description-packages-offers-right {
+  right: -50vw;
+}
+
+.tas-box-description-text-container {
+  position: relative;
+  height: 50vw;
+  width: 47.5vw;
+}
+
+.tas-box-description-text-container p {
+  margin: 0px;
+}
+
+.tas-box-description-text-container-hair-left, .tas-box-description-text-container-packages-offers-left {
+  margin-top: 52vw;
+  margin-left: 14vw;
+  transform: rotate(45deg);
+  padding-left: 2.5vw;
+}
+
+.tas-box-description-text-container-hair-right, .tas-box-description-text-container-packages-offers-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: 52vw;
+  margin-left: 11vw;
+  transform: rotate(45deg);
+  padding-right: 2.5vw;
+  text-align: right;
+}
+
+.tas-box-description-text-container-beauty-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: 52vw;
+  margin-left: 14vw;
+  transform: rotate(-45deg);
+  padding-left: 2.5vw;
+}
+
+.tas-box-description-text-container-beauty-right {
+  margin-top: 52vw;
+  margin-left: 11vw;
+  transform: rotate(-45deg);
+  padding-right: 2.5vw;
+  text-align: right;
+}
+
+.tas-box-description-title-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: 14.1vw;
+  width: 30.8vw;
+  font-weight: 600;
+}
+
+.tas-box-description-title-container-hair-left, .tas-box-description-title-container-packages-offers-left {
+  top: -16.6vw;
+  left: 0vw;
+  justify-content: flex-end;
+  padding-left: 2.5vw;
+  padding-bottom: 2.5vw;
+}
+
+.tas-box-description-title-container-hair-right, .tas-box-description-title-container-packages-offers-right {
+  bottom: -16.6vw;
+  right: 0vw;
+  text-align: right;
+  justify-content: flex-start;;
+  padding-right: 2.5vw;
+  padding-top: 2.5vw;
+}
+
+.tas-box-description-title-container-beauty-left {
+  bottom: -16.6vw;
+  left: 0vw;
+  justify-content: flex-start;
+  padding-left: 2.5vw;
+  padding-top: 2.5vw;
+}
+
+.tas-box-description-title-container-beauty-right {
+  top: -16.6vw;
+  right: 0vw;
+  text-align: right;
+  justify-content: flex-end;
+  padding-right: 2.5vw;
+  padding-bottom: 2.5vw;
+}
+
+.tas-box-description-dismiss-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: 16.6vw;
+  width: 16.6vw;
+}
+
+.tas-box-description-dismiss-container-hair-left, .tas-box-description-dismiss-container-packages-offers-left {
+  top: -33.3vw;
+  left: 0vw;
+  text-align: left;
+  padding-left: 2.5vw;
+  justify-content: flex-end;
+}
+
+.tas-box-description-dismiss-container-hair-right, .tas-box-description-dismiss-container-packages-offers-right {
+  bottom: -33.3vw;
+  right: 0vw;
+  text-align: right;
+  padding-right: 2.5vw;
+  justify-content: flex-start;
+}
+
+.tas-box-description-dismiss-container-beauty-left {
+  bottom: -33.3vw;
+  left: 0vw;
+  text-align: left;
+  padding-left: 2.5vw;
+  justify-content: flex-start;
+}
+
+.tas-box-description-dismiss-container-beauty-right {
+  top: -33.3vw;
+  right: 0vw;
+  text-align: right;
+  padding-right: 2.5vw;
+  justify-content: flex-end;
+}
+
+.tas-escape-arrow-left, .tas-escape-arrow-right {
+  display: inline-block;
+  stroke: $tas-colour-white;
+  height: 24px;
+  width: 14px;
+  fill: none;
+  stroke-width: 2;
+  cursor: pointer;
+}
+
+.tas-escape-arrow-left {
+  margin-right: auto;
+}
+
+.tas-escape-arrow-right {
+  margin-left: auto;
+}
+
+.tas-contact-section, .tas-footer-section {
+  position: relative;
+  width: 100%;
+  height: 98.85vw;
+  overflow: hidden;
+}
+
+.tas-contact-section .tas-rotation-container, .tas-footer-section .tas-rotation-container {
+  transform: translate(-63.8vw, -67.8vw) rotate(45deg);
+}
+
+.tas-contact-section .tas-section-left, .tas-footer-section .tas-section-left {
+  z-index: 2;
+}
+
+.tas-contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  text-align: center;
+}
+
+.tas-contact-item {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1vw;
+  border-style: solid;
+  border-color: $tas-colour-mid-grey;
+  border-width: 1vw;
+  padding: 1vw;
+}
+
+.tas-contact-item-top {
+  margin-top: 7vw;
+}
+
+.tas-contact-item-thin {
+  width: 28vw;
+  height: 6vw;
+}
+
+.tas-contact-item-wide {
+  width: 58vw;
+  height: 12vw;
+}
+
+.tas-contact-item-button {
+  width: 18vw;
+  cursor: pointer;
+  background-color: $tas-colour-pink;
+  border-color: $tas-colour-pink;
+  color: $tas-colour-white;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.tas-contact-item-button:hover {
+  color: $tas-colour-pink;
+  background-color: $tas-colour-white;
+}
+
+.tas-testimonials-section {
+
+}
+
+.tas-footer-section {
+
+}
+
+.tas-contact-success-failure {
+  position: fixed;
+  z-index: 3;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  top: 5vh;
+  left: 5vw;
+  height: 90vh;
+  width: 90vw;
+  background-color: $tas-colour-white-low-opacity;
+  color: $tas-colour-black;
+  border-radius: 1vw;
+  text-align: center;
+}
+
+.tas-contact-success-failure a {
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.tas-contact-success-failure a:hover {
+  color: $tas-colour-pink;
+}
+
+#success:target {
+  display: flex;
+}
+
+#oops:target {
+  display: flex;
+}
+
+.tas-contact-success-failure-item {
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tas-escape-cross {
+  margin-top: 5vw;
+  stroke: $tas-colour-black;
+  transition: stroke 0.3s;
+}
+
+.tas-escape-cross:hover {
+  stroke: $tas-colour-pink;
+}
+
+.tas-section-right .tas-box-small-cross-out {
+  background-color: $tas-colour-black;
+  background-image: url('../images/tas-box-background-small-cross-out.png');
+}
+
+.tas-testimonials-1, .tas-testimonials-3 {
+  position: relative;
+  width: 100%;
+  height: 98.85vw;
+  overflow: hidden;
+}
+
+.tas-testimonials-1 .tas-rotation-container, .tas-testimonials-3 .tas-rotation-container {
+  transform: translate(-38.35vw, -67.9vw) rotate(-45deg);
+}
+
+.tas-testimonials-2 {
+  position: relative;
+  width: 100%;
+  height: 98.85vw;
+  overflow: hidden;
+}
+
+.tas-testimonials-2 .tas-rotation-container {
+  transform: translate(-63.8vw, -67.8vw) rotate(45deg);
+}
+
+.tas-google-map {
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  z-index: 1;
+  top: -25%;
+  left: -25%;
+}
+
+.tas-google-map-address {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  height: 22vw;
+  padding: 2vw 0vw;
+  background-color: $tas-colour-black;
+  color: $tas-colour-white;
+}
+
+.tas-google-map-address p {
+  margin: 0.5vw;
+}
+
+.tas-google-map-address-top {
+  top: -2vw;
+  justify-content: flex-end;
+}
+
+.tas-google-map-address-bottom {
+  bottom: -2vw;
+  justify-content: flex-start;
+}
+
+.tas-box-text-container-small .tas-footer-small-print {
+  font-size: 10px;
+}
+
+.tas-small-print-hider {
+  display: none;
+}
+
+.tas-box-text-container-design-credit {
+  text-align: center;
+}
+
+.ww-logo {
+  height: 15px;
+  width: auto;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 320px) {
+
+  .tas-box-text-container-large.tas-box-split h2, .tas-box-text-container-large.tas-box-split svg {
+    margin: 10px 0vw;
+  }
+
+  .tas-box-text-container-testimonial p {
+    font-size: 10px;
+    line-height: normal;
+  }
+
+}
+
+@media (min-width: 350px) {
+
+  p.tas-email-standalone {
+    font-size: 10px;
+  }
+
+}
+
+@media (min-width: 400px) {
+
+  h1 {
+    font-size: 6vw;
+    margin: 0px 8vw;
+  }
+
+  p {
+    font-size: 12px;
+    line-height: normal;
+  }
+
+  p.tas-email-standalone {
+    font-size: 11px;
+  }
+
+  .tas-services-hair h1 {
+    margin: 0px 19.5vw;
+  }
+
+  .tas-box-text-container-large h2 {
+    font-size: 26px;
+  }
+
+  .tas-box-text-container-small h2,
+  .tas-box-split h2,  {
+    font-size: 13px;
+  }
+
+  .tas-box-split.tas-box-split-exception h2 {
+    font-size: 26px;
+  }
+
+  .tas-box-text-container-small p {
+    font-size: 13px;
+  }
+
+  .tas-box-split.tas-box-split-menu h2, {
+    font-size: 26px;
+  }
+
+  .tas-box-text-container-small.tas-box-split h2 {
+    margin: 14px 0px;
+  }
+
+  .tas-box-text-container-large.tas-box-split h2 {
+    margin: 16px 0px;
+  }
+
+  .tas-box-text-container-large.tas-box-split svg {
+    margin: 32px 0px;
+  }
+
+  .tas-menu-section .tas-social-icon {
+    height: 6vw;
+    width: 6vw;
+  }
+
+  .tas-box-description-text-container {
+    height: 50vw;
+    width: 40vw;
+    padding: 0vw 5vw;
+  }
+
+  .tas-box-description-title-container {
+    height: 14.1vw;
+    width: 23.3vw;
+    padding: 0vw 5vw;
+  }
+
+  .tas-box-description-title-container-hair-left, .tas-box-description-title-container-packages-offers-left {
+    padding-bottom: 2.5vw;
+  }
+
+  .tas-box-description-title-container-hair-right, .tas-box-description-title-container-packages-offers-right {
+    padding-top: 2.5vw;
+  }
+
+  .tas-box-description-title-container-beauty-left {
+    padding-top: 2.5vw;
+  }
+
+  .tas-box-description-title-container-beauty-right {
+    padding-bottom: 2.5vw;
+  }
+
+  .tas-box-description-dismiss-container {
+    height: 16.6vw;
+    width: 11.6vw;
+  }
+
+  .tas-box-description-dismiss-container-hair-left, .tas-box-description-dismiss-container-packages-offers-left {
+    padding-left: 5vw;
+  }
+
+  .tas-box-description-dismiss-container-hair-right, .tas-box-description-dismiss-container-packages-offers-right {
+    padding-right: 5vw;
+  }
+
+  .tas-box-description-dismiss-container-beauty-left {
+    padding-left: 5vw;
+  }
+
+  .tas-box-description-dismiss-container-beauty-right {
+    padding-right: 5vw;
+  }
+
+  .tas-escape-arrow-left, .tas-escape-arrow-right {
+    stroke-width: 3;
+  }
+
+  .tas-google-map-address p {
+    font-size: 13px;
+  }
+
+  .tas-box-text-container-small .tas-footer-small-print {
+    font-size: 10px;
+  }
+
+}
+
+@media (min-width: 450px) {
+
+  .tas-box-text-container-testimonial p {
+    font-size: 12px;
+  }
+
+}
+
+@media (min-width: 600px) {
+
+  p {
+    font-size: 14px;
+  }
+
+  p.tas-email-standalone {
+    font-size: 14px;
+  }
+
+  .tas-box-text-container-large h2 {
+    font-size: 34px;
+  }
+
+  .tas-box-text-container-small h2,
+  .tas-box-split h2,  {
+    font-size: 17px;
+  }
+
+  .tas-box-split.tas-box-split-exception h2 {
+    font-size: 34px;
+  }
+
+  .tas-box-text-container-small p {
+    font-size: 17px;
+  }
+
+  .tas-box-split.tas-box-split-menu h2, {
+    font-size: 34px;
+  }
+
+  .tas-box-text-container-small.tas-box-split h2 {
+    margin: 18px 0px;
+  }
+
+  .tas-box-text-container-large.tas-box-split h2 {
+    margin: 24px 0px;
+  }
+
+  .tas-box-text-container-large.tas-box-split svg {
+    margin: 48px 0px;
+  }
+
+  .tas-box-description-text-container {
+    height: 50vw;
+    width: 30vw;
+    padding: 0vw 10vw;
+  }
+
+  .tas-box-description-title-container {
+    height: 14.1vw;
+    width: 13.3vw;
+    padding: 0vw 10vw;
+  }
+
+  .tas-box-description-title-container-hair-left, .tas-box-description-title-container-packages-offers-left {
+    padding-bottom: 2.5vw;
+  }
+
+  .tas-box-description-title-container-hair-right, .tas-box-description-title-container-packages-offers-right {
+    padding-top: 2.5vw;
+  }
+
+  .tas-box-description-title-container-beauty-left {
+    padding-top: 2.5vw;
+  }
+
+  .tas-box-description-title-container-beauty-right {
+    padding-bottom: 2.5vw;
+  }
+
+  .tas-box-description-dismiss-container {
+    height: 16.6vw;
+    width: 6.6vw;
+  }
+
+  .tas-box-description-dismiss-container-hair-left, .tas-box-description-dismiss-container-packages-offers-left {
+    padding-left: 10vw;
+  }
+
+  .tas-box-description-dismiss-container-hair-right, .tas-box-description-dismiss-container-packages-offers-right {
+    padding-right: 10vw;
+  }
+
+  .tas-box-description-dismiss-container-beauty-left {
+    padding-left: 10vw;
+  }
+
+  .tas-box-description-dismiss-container-beauty-right {
+    padding-right: 10vw;
+  }
+
+  .tas-box-text-container-small .tas-footer-small-print {
+    font-size: 10px;
+  }
+
+  .tas-small-print-hider {
+    display: inline;
+  }
+
+  .tas-box-text-container-testimonial p {
+    font-size: 17px;
+  }
+
+  .tas-google-map-address p {
+    font-size: 17px;
+  }
+
+}
+
+@media (min-width: 800px) {
+
+  p {
+    font-size: 16px;
+  }
+
+  p.tas-email-standalone {
+    font-size: 16px;
+  }
+
+}
+
+@media (min-width: 1000px) {
+
+  .tas-box-text-container-large h2 {
+    font-size: 46px;
+  }
+
+  .tas-box-text-container-small h2,
+  .tas-box-split h2,  {
+    font-size: 23px;
+  }
+
+  .tas-box-split.tas-box-split-exception h2 {
+    font-size: 46px;
+  }
+
+  .tas-box-text-container-small p {
+    font-size: 23px;
+  }
+
+  .tas-box-split.tas-box-split-menu h2, {
+    font-size: 46px;
+  }
+
+  .tas-box-text-container-small.tas-box-split h2 {
+    margin: 24px 0px;
+  }
+
+  .tas-box-text-container-large.tas-box-split h2 {
+    margin: 40px 0px;
+  }
+
+  .tas-box-text-container-large.tas-box-split svg {
+    margin: 48px 0px;
+  }
+
+  .tas-box-text-container-small .tas-footer-small-print {
+    font-size: 13px;
+  }
+
+  .tas-box-text-container-testimonial p {
+    font-size: 23px;
+  }
+
+  .tas-google-map-address p {
+    font-size: 23px;
+  }
+
+}

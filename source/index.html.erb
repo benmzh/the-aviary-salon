@@ -1,0 +1,1027 @@
+<div class="tas-section tas-menu-section">
+  <h1 class="tas-heading-white tas-heading-main">The Aviary</h1>
+  <div class="tas-rotation-container">
+    <div class="tas-section-left">
+      <div class="tas-column tas-column-a">
+        <div class="tas-box tas-box-small tas-box-ghost">
+        </div>
+        <div class="tas-box tas-box-small tas-box-split-container">
+          <div class="tas-box-text-container tas-box-text-container-small">
+            <a class="tas-social-media-link" href="https://www.facebook.com/theaviarysalon/" alt="The Aviary Salon - Facebook" target="_blank">
+              <%= partial "partials/icons/tas-facebook-icon" %>
+            </a>
+            <a class="tas-social-media-link" href="https://www.instagram.com/theaviarysalon/" alt="The Aviary Salon - Instagram" target="_blank">
+              <%= partial "partials/icons/tas-instagram-icon" %>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="tas-column tas-column-a">
+        <div class="tas-box tas-box-small tas-box-ghost">
+        </div>
+        <div class="tas-box tas-box-small tas-box-ghost">
+        </div>
+        <div class="tas-box tas-box-large">
+          <div class="tas-box-text-container tas-box-text-container-large">
+            <a href="#services" alt="Go To Services">
+              <h2>Services</h2>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="tas-column tas-column-a">
+      </div>
+    </div>
+    <div class="tas-dividing-line">
+    </div>
+    <div class="tas-section-right">
+      <div class="tas-column tas-column-b">
+        <div class="tas-box tas-box-small tas-box-ghost">
+        </div>
+        <div class="tas-box tas-box-small">
+          <div class="tas-box-text-container tas-box-text-container-small">
+            <a href="#reviews" alt="Go To Reviews">
+              <h2>Reviews</h2>
+            </a>
+          </div>
+        </div>
+        <div class="tas-box tas-box-small">
+          <div class="tas-box-text-container tas-box-text-container-small">
+            <a href="#find-us-and-hours" alt="Find Aviary Salon">
+              <h2>Find Us</h2>
+            </a>
+          </div>
+        </div>
+        <div class="tas-box tas-box-small tas-box-telephone-icon">
+          <a href="tel:01702716413" alt="Call Aviary Salon">
+            <%= partial "partials/icons/tas-phone-icon" %>
+          </a>
+        </div>
+      </div>
+      <div class="tas-column tas-column-b">
+        <div class="tas-box tas-box-small">
+          <div class="tas-box-text-container tas-box-text-container-small">
+            <a href="#find-us-and-hours" alt="Go To Opening Hours">
+              <h2>Hours</h2>
+            </a>
+          </div>
+        </div>
+        <div class="tas-box tas-box-large tas-box-split-container tas-box-split-menu">
+          <div class="tas-box-text-container tas-box-text-container-large tas-box-split tas-box-split-exception">
+            <a href="#offer" alt="Go To Offer">
+              <h2>Offer</h2>
+            </a>
+            <a href="#contact" alt="Book An Appointment">
+              <h2>Book</h2>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="tas-column tas-column-b">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="tas-section tas-services-section" id="services">
+  <div class="tas-services-hair" id="hair">
+    <h1 class="tas-services-hair-heading">Hair</h1>
+    <div class="tas-rotation-container tas-rotation-container-reverse">
+      <div class="tas-section-left">
+        <div class="tas-column tas-column-a">
+          <div class="tas-box tas-box-small" style="background-image: url('../images/tas-box-background-small-white.png'), url('<%= dato.hair_services.select{ |s| s.number == "hair5" }.first.image.url(h: 280, fm: :jpg) %>');">
+            <div class="tas-box-text-container tas-box-text-container-small">
+              <h2 id="hair5"><%= dato.hair_services.select{ |s| s.number == "hair5" }.first.name %></h2>
+            </div>
+          </div>
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <div class="tas-box tas-box-small" style="background-image: url('../images/tas-box-background-small-white.png'), url('<%= dato.hair_services.select{ |s| s.number == "hair9" }.first.image.url(h: 280, fm: :jpg) %>');">
+            <div class="tas-box-text-container tas-box-text-container-small">
+              <h2 id="hair9"><%= dato.hair_services.select{ |s| s.number == "hair9" }.first.name %></h2>
+            </div>
+          </div>
+        </div>
+        <div class="tas-column tas-column-a">
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <div class="tas-box tas-box-large tas-box-split-container tas-box-split-hair">
+            <div class="tas-box-text-container tas-box-text-container-large tas-box-split tas-box-white tas-box-split-hair">
+              <h2 id="hair2"><%= dato.hair_services.select{ |s| s.number == "hair2" }.first.name %></h2>
+              <h2 id="hair3"><%= dato.hair_services.select{ |s| s.number == "hair3" }.first.name %></h2>
+            </div>
+          </div>
+          <div class="tas-box tas-box-small" style="background-image: url('../images/tas-box-background-small-white.png'), url('<%= dato.hair_services.select{ |s| s.number == "hair8" }.first.image.url(h: 280, fm: :jpg) %>');">
+            <div class="tas-box-text-container tas-box-text-container-small">
+              <h2 id="hair8"><%= dato.hair_services.select{ |s| s.number == "hair8" }.first.name %></h2>
+            </div>
+          </div>
+        </div>
+        <div class="tas-box tas-box-description tas-box-description-hair-left tas-box-description-hair-2">
+          <div class="tas-box-description-text-container tas-box-description-text-container-hair-left">
+            <div class="tas-box-description-dismiss-container tas-box-description-dismiss-container-hair-left">
+              <svg class="tas-escape-arrow-left" id="tas-escape-arrow-hair-2">
+                <%= partial "partials/icons/tas-escape-arrow-left-path" %>
+              </svg>
+            </div>
+            <div class="tas-box-description-title-container tas-box-description-title-container-hair-left">
+              <h3><%= dato.hair_services.select{ |s| s.number == "hair2" }.first.name %></h3>
+              <p class="black"><%= dato.hair_services.select{ |s| s.number == "hair2" }.first.price %></p>
+            </div>
+            <p><%= dato.hair_services.select{ |s| s.number == "hair2" }.first.description %></p>
+          </div>
+        </div>
+        <div class="tas-box tas-box-description tas-box-description-hair-left tas-box-description-hair-3">
+          <div class="tas-box-description-text-container tas-box-description-text-container-hair-left">
+            <div class="tas-box-description-dismiss-container tas-box-description-dismiss-container-hair-left">
+              <svg class="tas-escape-arrow-left" id="tas-escape-arrow-hair-3">
+                <%= partial "partials/icons/tas-escape-arrow-left-path" %>
+              </svg>
+            </div>
+            <div class="tas-box-description-title-container tas-box-description-title-container-hair-left">
+              <h3><%= dato.hair_services.select{ |s| s.number == "hair3" }.first.name %></h3>
+              <p class="black"><%= dato.hair_services.select{ |s| s.number == "hair3" }.first.price %></p>
+            </div>
+            <p><%= dato.hair_services.select{ |s| s.number == "hair3" }.first.description %></p>
+          </div>
+        </div>
+        <div class="tas-box tas-box-description tas-box-description-hair-left tas-box-description-hair-5">
+          <div class="tas-box-description-text-container tas-box-description-text-container-hair-left">
+            <div class="tas-box-description-dismiss-container tas-box-description-dismiss-container-hair-left">
+              <svg class="tas-escape-arrow-left" id="tas-escape-arrow-hair-5">
+                <%= partial "partials/icons/tas-escape-arrow-left-path" %>
+              </svg>
+            </div>
+            <div class="tas-box-description-title-container tas-box-description-title-container-hair-left">
+              <h3><%= dato.hair_services.select{ |s| s.number == "hair5" }.first.name %></h3>
+              <p class="black"><%= dato.hair_services.select{ |s| s.number == "hair5" }.first.price %></p>
+            </div>
+            <p><%= dato.hair_services.select{ |s| s.number == "hair5" }.first.description %></p>
+          </div>
+        </div>
+        <div class="tas-box tas-box-description tas-box-description-hair-left tas-box-description-hair-8">
+          <div class="tas-box-description-text-container tas-box-description-text-container-hair-left">
+            <div class="tas-box-description-dismiss-container tas-box-description-dismiss-container-hair-left">
+              <svg class="tas-escape-arrow-left" id="tas-escape-arrow-hair-8">
+                <%= partial "partials/icons/tas-escape-arrow-left-path" %>
+              </svg>
+            </div>
+            <div class="tas-box-description-title-container tas-box-description-title-container-hair-left">
+              <h3><%= dato.hair_services.select{ |s| s.number == "hair8" }.first.name %></h3>
+              <p class="black"><%= dato.hair_services.select{ |s| s.number == "hair8" }.first.price %></p>
+            </div>
+            <p><%= dato.hair_services.select{ |s| s.number == "hair8" }.first.description %></p>
+          </div>
+        </div>
+        <div class="tas-box tas-box-description tas-box-description-hair-left tas-box-description-hair-9">
+          <div class="tas-box-description-text-container tas-box-description-text-container-hair-left">
+            <div class="tas-box-description-dismiss-container tas-box-description-dismiss-container-hair-left">
+              <svg class="tas-escape-arrow-left" id="tas-escape-arrow-hair-9">
+                <%= partial "partials/icons/tas-escape-arrow-left-path" %>
+              </svg>
+            </div>
+            <div class="tas-box-description-title-container tas-box-description-title-container-hair-left">
+              <h3><%= dato.hair_services.select{ |s| s.number == "hair9" }.first.name %></h3>
+              <p class="black"><%= dato.hair_services.select{ |s| s.number == "hair9" }.first.price %></p>
+            </div>
+            <p><%= dato.hair_services.select{ |s| s.number == "hair9" }.first.description %></p>
+          </div>
+        </div>
+      </div>
+      <div class="tas-dividing-line">
+      </div>
+      <div class="tas-section-right">
+        <div class="tas-column tas-column-b">
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <div class="tas-box tas-box-small" style="background-image: url('../images/tas-box-background-small-black.png'), url('<%= dato.hair_services.select{ |s| s.number == "hair6" }.first.image.url(h: 280, fm: :jpg) %>');">
+            <div class="tas-box-text-container tas-box-text-container-small">
+              <h2 id="hair6"><%= dato.hair_services.select{ |s| s.number == "hair6" }.first.name %></h2>
+            </div>
+          </div>
+          <div class="tas-box tas-box-large" style="background-image: url('../images/tas-box-background-large-black.png'), url('<%= dato.hair_services.select{ |s| s.number == "hair1" }.first.image.url(h: 500, fm: :jpg) %>');">
+            <div class="tas-box-text-container tas-box-text-container-large">
+              <h2 id="hair1"><%= dato.hair_services.select{ |s| s.number == "hair1" }.first.name %></h2>
+            </div>
+          </div>
+          <div class="tas-box tas-box-small" style="background-image: url('../images/tas-box-background-small-black.png'), url('<%= dato.hair_services.select{ |s| s.number == "hairX" }.first.image.url(h: 280, fm: :jpg) %>');">
+            <div class="tas-box-text-container tas-box-text-container-small">
+              <h2 id="hairX"><%= dato.hair_services.select{ |s| s.number == "hairX" }.first.name %></h2>
+            </div>
+          </div>
+        </div>
+        <div class="tas-column tas-column-b">
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <div class="tas-box tas-box-small" style="background-image: url('../images/tas-box-background-small-black.png'), url('<%= dato.hair_services.select{ |s| s.number == "hair4" }.first.image.url(h: 280, fm: :jpg) %>');">
+            <div class="tas-box-text-container tas-box-text-container-small">
+              <h2 id="hair4"><%= dato.hair_services.select{ |s| s.number == "hair4" }.first.name %></h2>
+            </div>
+          </div>
+        </div>
+        <div class="tas-column tas-column-b">
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <div class="tas-box tas-box-small" style="background-image: url('../images/tas-box-background-small-black.png'), url('<%= dato.hair_services.select{ |s| s.number == "hair7" }.first.image.url(h: 280, fm: :jpg) %>');">
+            <div class="tas-box-text-container tas-box-text-container-small">
+              <h2 id="hair7"><%= dato.hair_services.select{ |s| s.number == "hair7" }.first.name %></h2>
+            </div>
+          </div>
+        </div>
+        <div class="tas-box tas-box-description tas-box-description-hair-right tas-box-description-hair-1">
+          <div class="tas-box-description-text-container tas-box-description-text-container-hair-right">
+            <div class="tas-box-description-dismiss-container tas-box-description-dismiss-container-hair-right">
+              <svg class="tas-escape-arrow-right" id="tas-escape-arrow-hair-1">
+                <%= partial "partials/icons/tas-escape-arrow-right-path" %>
+              </svg>
+            </div>
+            <div class="tas-box-description-title-container tas-box-description-title-container-hair-right">
+              <h3><%= dato.hair_services.select{ |s| s.number == "hair1" }.first.name %></h3>
+              <p class="black"><%= dato.hair_services.select{ |s| s.number == "hair1" }.first.price %></p>
+            </div>
+            <p><%= dato.hair_services.select{ |s| s.number == "hair1" }.first.description %></p>
+          </div>
+        </div>
+        <div class="tas-box tas-box-description tas-box-description-hair-right tas-box-description-hair-4">
+          <div class="tas-box-description-text-container tas-box-description-text-container-hair-right">
+            <div class="tas-box-description-dismiss-container tas-box-description-dismiss-container-hair-right">
+              <svg class="tas-escape-arrow-right" id="tas-escape-arrow-hair-4">
+                <%= partial "partials/icons/tas-escape-arrow-right-path" %>
+              </svg>
+            </div>
+            <div class="tas-box-description-title-container tas-box-description-title-container-hair-right">
+              <h3><%= dato.hair_services.select{ |s| s.number == "hair4" }.first.name %></h3>
+              <p class="black"><%= dato.hair_services.select{ |s| s.number == "hair4" }.first.price %></p>
+            </div>
+            <p><%= dato.hair_services.select{ |s| s.number == "hair4" }.first.description %></p>
+          </div>
+        </div>
+        <div class="tas-box tas-box-description tas-box-description-hair-right tas-box-description-hair-6">
+          <div class="tas-box-description-text-container tas-box-description-text-container-hair-right">
+            <div class="tas-box-description-dismiss-container tas-box-description-dismiss-container-hair-right">
+              <svg class="tas-escape-arrow-right" id="tas-escape-arrow-hair-6">
+                <%= partial "partials/icons/tas-escape-arrow-right-path" %>
+              </svg>
+            </div>
+            <div class="tas-box-description-title-container tas-box-description-title-container-hair-right">
+              <h3><%= dato.hair_services.select{ |s| s.number == "hair6" }.first.name %></h3>
+              <p class="black"><%= dato.hair_services.select{ |s| s.number == "hair6" }.first.price %></p>
+            </div>
+            <p><%= dato.hair_services.select{ |s| s.number == "hair6" }.first.description %></p>
+          </div>
+        </div>
+        <div class="tas-box tas-box-description tas-box-description-hair-right tas-box-description-hair-7">
+          <div class="tas-box-description-text-container tas-box-description-text-container-hair-right">
+            <div class="tas-box-description-dismiss-container tas-box-description-dismiss-container-hair-right">
+              <svg class="tas-escape-arrow-right" id="tas-escape-arrow-hair-7">
+                <%= partial "partials/icons/tas-escape-arrow-right-path" %>
+              </svg>
+            </div>
+            <div class="tas-box-description-title-container tas-box-description-title-container-hair-right">
+              <h3><%= dato.hair_services.select{ |s| s.number == "hair7" }.first.name %></h3>
+              <p class="black"><%= dato.hair_services.select{ |s| s.number == "hair7" }.first.price %></p>
+            </div>
+            <p><%= dato.hair_services.select{ |s| s.number == "hair7" }.first.description %></p>
+          </div>
+        </div>
+        <div class="tas-box tas-box-description tas-box-description-hair-right tas-box-description-hair-X">
+          <div class="tas-box-description-text-container tas-box-description-text-container-hair-right">
+            <div class="tas-box-description-dismiss-container tas-box-description-dismiss-container-hair-right">
+              <svg class="tas-escape-arrow-right" id="tas-escape-arrow-hair-X">
+                <%= partial "partials/icons/tas-escape-arrow-right-path" %>
+              </svg>
+            </div>
+            <div class="tas-box-description-title-container tas-box-description-title-container-hair-right">
+              <h3><%= dato.hair_services.select{ |s| s.number == "hairX" }.first.name %></h3>
+              <p class="black"><%= dato.hair_services.select{ |s| s.number == "hairX" }.first.price %></p>
+            </div>
+            <p><%= dato.hair_services.select{ |s| s.number == "hairX" }.first.description %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tas-services-beauty" id="beauty">
+    <h1 class="tas-services-beauty-heading tas-heading-white">Beauty</h1>
+    <div class="tas-rotation-container">
+      <div class="tas-section-left">
+        <div class="tas-column tas-column-a">
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <div class="tas-box tas-box-small" style="background-image: url('../images/tas-box-background-small-white.png'), url('<%= dato.beauty_services.select{ |s| s.number == "beauty7" }.first.image.url(h: 280, fm: :jpg) %>');">
+            <div class="tas-box-text-container tas-box-text-container-small">
+              <h2 id="beauty7"><%= dato.beauty_services.select{ |s| s.number == "beauty7" }.first.name %></h2>
+            </div>
+          </div>
+          <div class="tas-box tas-box-small" style="background-image: url('../images/tas-box-background-small-white.png'), url('<%= dato.beauty_services.select{ |s| s.number == "beauty6" }.first.image.url(h: 280, fm: :jpg) %>');">
+            <div class="tas-box-text-container tas-box-text-container-small">
+              <h2 id="beauty6"><%= dato.beauty_services.select{ |s| s.number == "beauty6" }.first.name %></h2>
+            </div>
+          </div>
+        </div>
+        <div class="tas-column tas-column-a">
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <div class="tas-box tas-box-large" style="background-image: url('../images/tas-box-background-large-white.png'), url('<%= dato.beauty_services.select{ |s| s.number == "beauty1" }.first.image.url(h: 500, fm: :jpg) %>');">
+            <div class="tas-box-text-container tas-box-text-container-large">
+              <h2 id="beauty1"><%= dato.beauty_services.select{ |s| s.number == "beauty1" }.first.name %></h2>
+            </div>
+          </div>
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <div class="tas-box tas-box-small" style="background-image: url('../images/tas-box-background-small-white.png'), url('<%= dato.beauty_services.select{ |s| s.number == "beauty5" }.first.image.url(h: 280, fm: :jpg) %>');">
+            <div class="tas-box-text-container tas-box-text-container-small">
+              <h2 id="beauty5"><%= dato.beauty_services.select{ |s| s.number == "beauty5" }.first.name %></h2>
+            </div>
+          </div>
+        </div>
+        <div class="tas-box tas-box-description tas-box-description-beauty-left tas-box-description-beauty-1">
+          <div class="tas-box-description-text-container tas-box-description-text-container-beauty-left">
+            <div class="tas-box-description-dismiss-container tas-box-description-dismiss-container-beauty-left">
+              <svg class="tas-escape-arrow-left" id="tas-escape-arrow-beauty-1">
+                <%= partial "partials/icons/tas-escape-arrow-left-path" %>
+              </svg>
+            </div>
+            <div class="tas-box-description-title-container tas-box-description-title-container-beauty-left">
+              <h3><%= dato.beauty_services.select{ |s| s.number == "beauty1" }.first.name %></h3>
+              <p class="black"><%= dato.beauty_services.select{ |s| s.number == "beauty1" }.first.price %></p>
+            </div>
+            <p><%= dato.beauty_services.select{ |s| s.number == "beauty1" }.first.description %></p>
+          </div>
+        </div>
+        <div class="tas-box tas-box-description tas-box-description-beauty-left tas-box-description-beauty-5">
+          <div class="tas-box-description-text-container tas-box-description-text-container-beauty-left">
+            <div class="tas-box-description-dismiss-container tas-box-description-dismiss-container-beauty-left">
+              <svg class="tas-escape-arrow-left" id="tas-escape-arrow-beauty-5">
+                <%= partial "partials/icons/tas-escape-arrow-left-path" %>
+              </svg>
+            </div>
+            <div class="tas-box-description-title-container tas-box-description-title-container-beauty-left">
+              <h3><%= dato.beauty_services.select{ |s| s.number == "beauty5" }.first.name %></h3>
+              <p class="black"><%= dato.beauty_services.select{ |s| s.number == "beauty5" }.first.price %></p>
+            </div>
+            <p><%= dato.beauty_services.select{ |s| s.number == "beauty5" }.first.description %></p>
+          </div>
+        </div>
+        <div class="tas-box tas-box-description tas-box-description-beauty-left tas-box-description-beauty-6">
+          <div class="tas-box-description-text-container tas-box-description-text-container-beauty-left">
+            <div class="tas-box-description-dismiss-container tas-box-description-dismiss-container-beauty-left">
+              <svg class="tas-escape-arrow-left" id="tas-escape-arrow-beauty-6">
+                <%= partial "partials/icons/tas-escape-arrow-left-path" %>
+              </svg>
+            </div>
+            <div class="tas-box-description-title-container tas-box-description-title-container-beauty-left">
+              <h3><%= dato.beauty_services.select{ |s| s.number == "beauty6" }.first.name %></h3>
+              <p class="black"><%= dato.beauty_services.select{ |s| s.number == "beauty6" }.first.price %></p>
+            </div>
+            <p><%= dato.beauty_services.select{ |s| s.number == "beauty6" }.first.description %></p>
+          </div>
+        </div>
+        <div class="tas-box tas-box-description tas-box-description-beauty-left tas-box-description-beauty-7">
+          <div class="tas-box-description-text-container tas-box-description-text-container-beauty-left">
+            <div class="tas-box-description-dismiss-container tas-box-description-dismiss-container-beauty-left">
+              <svg class="tas-escape-arrow-left" id="tas-escape-arrow-beauty-7">
+                <%= partial "partials/icons/tas-escape-arrow-left-path" %>
+              </svg>
+            </div>
+            <div class="tas-box-description-title-container tas-box-description-title-container-beauty-left">
+              <h3><%= dato.beauty_services.select{ |s| s.number == "beauty7" }.first.name %></h3>
+              <p class="black"><%= dato.beauty_services.select{ |s| s.number == "beauty7" }.first.price %></p>
+            </div>
+            <p><%= dato.beauty_services.select{ |s| s.number == "beauty7" }.first.description %></p>
+          </div>
+        </div>
+      </div>
+      <div class="tas-dividing-line">
+      </div>
+      <div class="tas-section-right">
+        <div class="tas-column tas-column-b">
+          <div class="tas-box tas-box-small" style="background-image: url('../images/tas-box-background-small-black.png'), url('<%= dato.beauty_services.select{ |s| s.number == "beauty4" }.first.image.url(h: 280, fm: :jpg) %>');">
+            <div class="tas-box-text-container tas-box-text-container-small">
+              <h2 id="beauty4"><%= dato.beauty_services.select{ |s| s.number == "beauty4" }.first.name %></h2>
+            </div>
+          </div>
+          <div class="tas-box tas-box-large tas-box-split-container tas-box-split-beauty">
+            <div class="tas-box-text-container tas-box-text-container-large tas-box-split tas-box-split-beauty">
+              <h2 id="beauty2"><%= dato.beauty_services.select{ |s| s.number == "beauty2" }.first.name %></h2>
+              <h2 id="beauty3"><%= dato.beauty_services.select{ |s| s.number == "beauty3" }.first.name %></h2>
+            </div>
+          </div>
+          <div class="tas-box tas-box-small" style="background-image: url('../images/tas-box-background-small-black.png'), url('<%= dato.beauty_services.select{ |s| s.number == "beauty9" }.first.image.url(h: 280, fm: :jpg) %>');">
+            <div class="tas-box-text-container tas-box-text-container-small">
+              <h2 id="beauty9"><%= dato.beauty_services.select{ |s| s.number == "beauty9" }.first.name %></h2>
+            </div>
+          </div>
+          <div class="tas-box tas-box-small" style="background-image: url('../images/tas-box-background-small-black.png'), url('<%= dato.beauty_services.select{ |s| s.number == "beauty8" }.first.image.url(h: 280, fm: :jpg) %>');">
+            <div class="tas-box-text-container tas-box-text-container-small">
+              <h2 id="beauty8"><%= dato.beauty_services.select{ |s| s.number == "beauty8" }.first.name %></h2>
+            </div>
+          </div>
+        </div>
+        <div class="tas-column tas-column-b">
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+        </div>
+        <div class="tas-column tas-column-b">
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <div class="tas-box tas-box-small" style="background-image: url('../images/tas-box-background-small-black.png'), url('<%= dato.beauty_services.select{ |s| s.number == "beautyX" }.first.image.url(h: 280, fm: :jpg) %>');">
+            <div class="tas-box-text-container tas-box-text-container-small">
+              <h2 id="beautyX"><%= dato.beauty_services.select{ |s| s.number == "beautyX" }.first.name %></h2>
+            </div>
+          </div>
+        </div>
+        <div class="tas-box tas-box-description tas-box-description-beauty-right tas-box-description-beauty-2">
+          <div class="tas-box-description-text-container tas-box-description-text-container-beauty-right">
+            <div class="tas-box-description-dismiss-container tas-box-description-dismiss-container-beauty-right">
+              <svg class="tas-escape-arrow-right" id="tas-escape-arrow-beauty-2">
+                <%= partial "partials/icons/tas-escape-arrow-right-path" %>
+              </svg>
+            </div>
+            <div class="tas-box-description-title-container tas-box-description-title-container-beauty-right">
+              <h3><%= dato.beauty_services.select{ |s| s.number == "beauty2" }.first.name %></h3>
+              <p class="black"><%= dato.beauty_services.select{ |s| s.number == "beauty2" }.first.price %></p>
+            </div>
+            <p><%= dato.beauty_services.select{ |s| s.number == "beauty2" }.first.description %></p>
+          </div>
+        </div>
+        <div class="tas-box tas-box-description tas-box-description-beauty-right tas-box-description-beauty-3">
+          <div class="tas-box-description-text-container tas-box-description-text-container-beauty-right">
+            <div class="tas-box-description-dismiss-container tas-box-description-dismiss-container-beauty-right">
+              <svg class="tas-escape-arrow-right" id="tas-escape-arrow-beauty-3">
+                <%= partial "partials/icons/tas-escape-arrow-right-path" %>
+              </svg>
+            </div>
+            <div class="tas-box-description-title-container tas-box-description-title-container-beauty-right">
+              <h3><%= dato.beauty_services.select{ |s| s.number == "beauty3" }.first.name %></h3>
+              <p class="black"><%= dato.beauty_services.select{ |s| s.number == "beauty3" }.first.price %></p>
+            </div>
+            <p><%= dato.beauty_services.select{ |s| s.number == "beauty3" }.first.description %></p>
+          </div>
+        </div>
+        <div class="tas-box tas-box-description tas-box-description-beauty-right tas-box-description-beauty-4">
+          <div class="tas-box-description-text-container tas-box-description-text-container-beauty-right">
+            <div class="tas-box-description-dismiss-container tas-box-description-dismiss-container-beauty-right">
+              <svg class="tas-escape-arrow-right" id="tas-escape-arrow-beauty-4">
+                <%= partial "partials/icons/tas-escape-arrow-right-path" %>
+              </svg>
+            </div>
+            <div class="tas-box-description-title-container tas-box-description-title-container-beauty-right">
+              <h3><%= dato.beauty_services.select{ |s| s.number == "beauty4" }.first.name %></h3>
+              <p class="black"><%= dato.beauty_services.select{ |s| s.number == "beauty4" }.first.price %></p>
+            </div>
+            <p><%= dato.beauty_services.select{ |s| s.number == "beauty4" }.first.description %></p>
+          </div>
+        </div>
+        <div class="tas-box tas-box-description tas-box-description-beauty-right tas-box-description-beauty-8">
+          <div class="tas-box-description-text-container tas-box-description-text-container-beauty-right">
+            <div class="tas-box-description-dismiss-container tas-box-description-dismiss-container-beauty-right">
+              <svg class="tas-escape-arrow-right" id="tas-escape-arrow-beauty-8">
+                <%= partial "partials/icons/tas-escape-arrow-right-path" %>
+              </svg>
+            </div>
+            <div class="tas-box-description-title-container tas-box-description-title-container-beauty-right">
+              <h3><%= dato.beauty_services.select{ |s| s.number == "beauty8" }.first.name %></h3>
+              <p class="black"><%= dato.beauty_services.select{ |s| s.number == "beauty8" }.first.price %></p>
+            </div>
+            <p><%= dato.beauty_services.select{ |s| s.number == "beauty8" }.first.description %></p>
+          </div>
+        </div>
+        <div class="tas-box tas-box-description tas-box-description-beauty-right tas-box-description-beauty-9">
+          <div class="tas-box-description-text-container tas-box-description-text-container-beauty-right">
+            <div class="tas-box-description-dismiss-container tas-box-description-dismiss-container-beauty-right">
+              <svg class="tas-escape-arrow-right" id="tas-escape-arrow-beauty-9">
+                <%= partial "partials/icons/tas-escape-arrow-right-path" %>
+              </svg>
+            </div>
+            <div class="tas-box-description-title-container tas-box-description-title-container-beauty-right">
+              <h3><%= dato.beauty_services.select{ |s| s.number == "beauty9" }.first.name %></h3>
+              <p class="black"><%= dato.beauty_services.select{ |s| s.number == "beauty9" }.first.price %></p>
+            </div>
+            <p><%= dato.beauty_services.select{ |s| s.number == "beauty9" }.first.description %></p>
+          </div>
+        </div>
+        <div class="tas-box tas-box-description tas-box-description-beauty-right tas-box-description-beauty-X">
+          <div class="tas-box-description-text-container tas-box-description-text-container-beauty-right">
+            <div class="tas-box-description-dismiss-container tas-box-description-dismiss-container-beauty-right">
+              <svg class="tas-escape-arrow-right" id="tas-escape-arrow-beauty-X">
+                <%= partial "partials/icons/tas-escape-arrow-right-path" %>
+              </svg>
+            </div>
+            <div class="tas-box-description-title-container tas-box-description-title-container-beauty-right">
+              <h3><%= dato.beauty_services.select{ |s| s.number == "beautyX" }.first.name %></h3>
+              <p class="black"><%= dato.beauty_services.select{ |s| s.number == "beautyX" }.first.price %></p>
+            </div>
+            <p><%= dato.beauty_services.select{ |s| s.number == "beautyX" }.first.description %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tas-services-packages" id="packages">
+    <div class="tas-rotation-container tas-rotation-container-reverse">
+      <div class="tas-section-left">
+        <div class="tas-column tas-column-a">
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <div class="tas-box tas-box-small" style="background-image: url('../images/tas-box-background-small-white.png'), url('<%= dato.packages.select{ |s| s.number == "package3" }.first.image.url(h: 280, fm: :jpg) %>');">
+            <div class="tas-box-text-container tas-box-text-container-small">
+              <h2 id="package3"><%= dato.packages.select{ |s| s.number == "package3" }.first.name %></h2>
+            </div>
+          </div>
+        </div>
+        <div class="tas-column tas-column-a">
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <div class="tas-box tas-box-large" style="background-image: url('../images/tas-box-background-large-white.png'), url('<%= dato.offer.image.url(h: 500, fm: :jpg) %>');" id="offer">
+            <div class="tas-box-text-container tas-box-text-container-large">
+              <h2 id="offer-heading"><%= dato.offer.name %></h2>
+            </div>
+          </div>
+        </div>
+        <div class="tas-box tas-box-description tas-box-description-packages-offers-left tas-box-description-package-3">
+          <div class="tas-box-description-text-container tas-box-description-text-container-packages-offers-left">
+            <div class="tas-box-description-dismiss-container tas-box-description-dismiss-container-packages-offers-left">
+              <svg class="tas-escape-arrow-left" id="tas-escape-arrow-package-3">
+                <%= partial "partials/icons/tas-escape-arrow-left-path" %>
+              </svg>
+            </div>
+            <div class="tas-box-description-title-container tas-box-description-title-container-packages-offers-left">
+              <h3><%= dato.packages.select{ |s| s.number == "package3" }.first.name %></h3>
+              <p class="black"><%= dato.packages.select{ |s| s.number == "package3" }.first.price %></p>
+            </div>
+            <p><%= dato.packages.select{ |s| s.number == "package3" }.first.description %></p>
+          </div>
+        </div>
+        <div class="tas-box tas-box-description tas-box-description-packages-offers-left tas-box-description-offer">
+          <div class="tas-box-description-text-container tas-box-description-text-container-packages-offers-left">
+            <div class="tas-box-description-dismiss-container tas-box-description-dismiss-container-packages-offers-left">
+              <svg class="tas-escape-arrow-left" id="tas-escape-arrow-offer">
+                <%= partial "partials/icons/tas-escape-arrow-left-path" %>
+              </svg>
+            </div>
+            <div class="tas-box-description-title-container tas-box-description-title-container-packages-offers-left">
+              <h3><%= dato.offer.name %></h3>
+              <p class="black"><%= dato.offer.price %></p>
+            </div>
+            <p><%= dato.offer.description %></p>
+          </div>
+        </div>
+      </div>
+      <div class="tas-dividing-line">
+      </div>
+      <div class="tas-section-right">
+        <div class="tas-column tas-column-b">
+          <div class="tas-box tas-box-small" style="background-image: url('../images/tas-box-background-small-black.png'), url('<%= dato.packages.select{ |s| s.number == "package2" }.first.image.url(h: 280, fm: :jpg) %>');">
+            <div class="tas-box-text-container tas-box-text-container-small">
+              <h2 id="package2"><%= dato.packages.select{ |s| s.number == "package2" }.first.name %></h2>
+            </div>
+          </div>
+          <div class="tas-box tas-box-large" style="background-image: url('../images/tas-box-background-large-black.png'), url('<%= dato.packages.select{ |s| s.number == "package1" }.first.image.url(h: 500, fm: :jpg) %>');">
+            <div class="tas-box-text-container tas-box-text-container-large">
+              <h2 id="package1"><%= dato.packages.select{ |s| s.number == "package1" }.first.name %></h2>
+            </div>
+          </div>
+        </div>
+        <div class="tas-box tas-box-description tas-box-description-packages-offers-right tas-box-description-package-1">
+          <div class="tas-box-description-text-container tas-box-description-text-container-packages-offers-right">
+            <div class="tas-box-description-dismiss-container tas-box-description-dismiss-container-packages-offers-right">
+              <svg class="tas-escape-arrow-right" id="tas-escape-arrow-package-1">
+                <%= partial "partials/icons/tas-escape-arrow-right-path" %>
+              </svg>
+            </div>
+            <div class="tas-box-description-title-container tas-box-description-title-container-packages-offers-right">
+              <h3><%= dato.packages.select{ |s| s.number == "package1" }.first.name %></h3>
+              <p class="black"><%= dato.packages.select{ |s| s.number == "package1" }.first.price %></p>
+            </div>
+            <p><%= dato.packages.select{ |s| s.number == "package1" }.first.description %></p>
+          </div>
+        </div>
+        <div class="tas-box tas-box-description tas-box-description-packages-offers-right tas-box-description-package-2">
+          <div class="tas-box-description-text-container tas-box-description-text-container-packages-offers-right">
+            <div class="tas-box-description-dismiss-container tas-box-description-dismiss-container-packages-offers-right">
+              <svg class="tas-escape-arrow-right" id="tas-escape-arrow-package-2">
+                <%= partial "partials/icons/tas-escape-arrow-right-path" %>
+              </svg>
+            </div>
+            <div class="tas-box-description-title-container tas-box-description-title-container-packages-offers-right">
+              <h3><%= dato.packages.select{ |s| s.number == "package2" }.first.name %></h3>
+              <p class="black"><%= dato.packages.select{ |s| s.number == "package2" }.first.price %></p>
+            </div>
+            <p><%= dato.packages.select{ |s| s.number == "package2" }.first.description %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="tas-section tas-contact-section" id="contact">
+  <p class="tas-email-standalone">
+    <a href="mailto:theaviarysalon@hotmail.com?Subject=Website%20Enquiry">
+      theaviarysalon@hotmail.com
+    </a>
+  </p>
+  <div class="tas-rotation-container">
+    <div class="tas-section-left">
+      <div class="tas-column tas-column-a">
+      </div>
+      <div class="tas-column tas-column-a">
+        <div class="tas-box tas-box-small tas-box-ghost">
+        </div>
+        <div class="tas-box tas-box-extra-large">
+          <div class="tas-box-text-container tas-box-text-container-extra-large">
+            <form class="tas-contact-form" method="post" name="contact-form" action="https://web-workshop-messenger.herokuapp.com/f/465271">
+              <input class="tas-contact-item tas-contact-item-thin tas-contact-item-top" type="text" maxlength="255" name="Name" placeholder="Name" required>
+              <textarea class="tas-contact-item tas-contact-item-wide" rows="4" maxlength="4000" name="Message" placeholder="Message"></textarea>
+              <input class="tas-contact-item tas-contact-item-thin" type="text" maxlength="255" name="Phone/Email" placeholder="Phone/Email" required>
+              <input type="submit" value="Send" class="tas-contact-item tas-contact-item-button">
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="tas-column tas-column-a">
+        <div class="tas-box tas-box-small tas-box-ghost">
+        </div>
+        <div class="tas-box tas-box-small tas-box-ghost">
+        </div>
+        <div class="tas-box tas-box-small tas-box-split-container">
+          <div class="tas-box-text-container tas-box-text-container-small">
+            <a class="tas-social-media-link" href="https://www.facebook.com/theaviarysalon/" alt="The Aviary Salon - Facebook" target="_blank">
+              <%= partial "partials/icons/tas-facebook-icon" %>
+            </a>
+            <a class="tas-social-media-link" href="https://www.instagram.com/theaviarysalon/" alt="The Aviary Salon - Instagram" target="_blank">
+              <%= partial "partials/icons/tas-instagram-icon" %>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tas-dividing-line">
+    </div>
+    <div class="tas-section-right">
+      <div class="tas-column tas-column-b">
+      </div>
+      <div class="tas-column tas-column-b">
+      </div>
+      <div class="tas-column tas-column-b">
+        <div class="tas-box tas-box-small tas-box-ghost">
+        </div>
+        <div class="tas-box tas-box-small tas-box-ghost">
+        </div>
+        <div class="tas-box tas-box-small tas-box-ghost">
+        </div>
+        <div class="tas-box tas-box-small">
+          <a href="tel:01702716413" alt="Call Aviary Salon">
+            <div class="tas-box-text-container tas-box-text-container-small">
+              <h2>01702 716413</h2>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="tas-section tas-testimonials-section" id="reviews">
+  <div class="tas-testimonials-1">
+    <div class="tas-rotation-container tas-rotation-container-reverse">
+      <div class="tas-section-left">
+        <div class="tas-column tas-column-a">
+        </div>
+        <div class="tas-column tas-column-a">
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <a href="<%= dato.testimonials.select{ |s| s.number == "review2" }.first.link %>" target="_blank" alt="See Full Review">
+            <div class="tas-box tas-box-large">
+              <div class="tas-box-text-container tas-box-text-container-large tas-box-text-container-testimonial">
+                <p>"<%= dato.testimonials.select{ |s| s.number == "review2" }.first.review %>"</p>
+              </div>
+            </div>
+          </a>
+          <a href="<%= dato.testimonials.select{ |s| s.number == "review3" }.first.link %>" target="_blank" alt="See Full Review">
+            <div class="tas-box tas-box-large">
+              <div class="tas-box-text-container tas-box-text-container-large tas-box-text-container-testimonial">
+                <p>"<%= dato.testimonials.select{ |s| s.number == "review3" }.first.review %>"</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="tas-column tas-column-a">
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <div class="tas-box tas-box-small" style="background-image: url('../images/tas-box-background-small-white.png'), url('<%= dato.social_photos.select{ |s| s.number == "photo4" }.first.photo.url(h: 280, fm: :jpg) %>');">
+          </div>
+        </div>
+      </div>
+      <div class="tas-dividing-line">
+      </div>
+      <div class="tas-section-right">
+        <div class="tas-column tas-column-b">
+          <div class="tas-box tas-box-small" style="background-image: url('../images/tas-box-background-small-black.png'), url('<%= dato.social_photos.select{ |s| s.number == "photo1" }.first.photo.url(h: 280, fm: :jpg) %>');">
+          </div>
+          <div class="tas-box tas-box-small" style="background-image: url('../images/tas-box-background-small-black.png'), url('<%= dato.social_photos.select{ |s| s.number == "photo2" }.first.photo.url(h: 280, fm: :jpg) %>');">
+          </div>
+          <a href="<%= dato.testimonials.select{ |s| s.number == "review1" }.first.link %>" target="_blank" alt="See Full Review">
+            <div class="tas-box tas-box-large">
+              <div class="tas-box-text-container tas-box-text-container-large tas-box-text-container-testimonial">
+                <p>"<%= dato.testimonials.select{ |s| s.number == "review1" }.first.review %>"</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="tas-column tas-column-b">
+        </div>
+        <div class="tas-column tas-column-b">
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <div class="tas-box tas-box-small" style="background-image: url('../images/tas-box-background-small-black.png'), url('<%= dato.social_photos.select{ |s| s.number == "photo3" }.first.photo.url(h: 280, fm: :jpg) %>');">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tas-testimonials-2">
+    <div class="tas-rotation-container">
+      <div class="tas-section-left">
+        <div class="tas-column tas-column-a">
+          <div class="tas-box tas-box-small" style="background-image: url('../images/tas-box-background-small-white.png'), url('<%= dato.social_photos.select{ |s| s.number == "photo6" }.first.photo.url(h: 280, fm: :jpg) %>');">
+          </div>
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <div class="tas-box tas-box-small" style="background-image: url('../images/tas-box-background-small-white.png'), url('<%= dato.social_photos.select{ |s| s.number == "photo7" }.first.photo.url(h: 280, fm: :jpg) %>');">
+          </div>
+        </div>
+        <div class="tas-column tas-column-a">
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <a href="<%= dato.testimonials.select{ |s| s.number == "review4" }.first.link %>" target="_blank" alt="See Full Review">
+            <div class="tas-box tas-box-large">
+              <div class="tas-box-text-container tas-box-text-container-large tas-box-text-container-testimonial">
+                <p>"<%= dato.testimonials.select{ |s| s.number == "review4" }.first.review %>"</p>
+              </div>
+            </div>
+          </a>
+          <a href="<%= dato.testimonials.select{ |s| s.number == "review5" }.first.link %>" target="_blank" alt="See Full Review">
+            <div class="tas-box tas-box-large">
+              <div class="tas-box-text-container tas-box-text-container-large tas-box-text-container-testimonial">
+                <p>"<%= dato.testimonials.select{ |s| s.number == "review5" }.first.review %>"</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="tas-column tas-column-a">
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <div class="tas-box tas-box-small" style="background-image: url('../images/tas-box-background-small-white.png'), url('<%= dato.social_photos.select{ |s| s.number == "photo5" }.first.photo.url(h: 280, fm: :jpg) %>');">
+          </div>
+        </div>
+      </div>
+      <div class="tas-dividing-line">
+      </div>
+      <div class="tas-section-right">
+        <div class="tas-column tas-column-b">
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <a href="<%= dato.testimonials.select{ |s| s.number == "review6" }.first.link %>" target="_blank" alt="See Full Review">
+            <div class="tas-box tas-box-large">
+              <div class="tas-box-text-container tas-box-text-container-large tas-box-text-container-testimonial">
+                <p>"<%= dato.testimonials.select{ |s| s.number == "review6" }.first.review %>"</p>
+              </div>
+            </div>
+          </a>
+          <a href="<%= dato.testimonials.select{ |s| s.number == "review7" }.first.link %>" target="_blank" alt="See Full Review">
+            <div class="tas-box tas-box-large">
+              <div class="tas-box-text-container tas-box-text-container-large tas-box-text-container-testimonial">
+                <p>"<%= dato.testimonials.select{ |s| s.number == "review7" }.first.review %>"</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="tas-column tas-column-b">
+        </div>
+        <div class="tas-column tas-column-b">
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <div class="tas-box tas-box-small" style="background-image: url('../images/tas-box-background-small-black.png'), url('<%= dato.social_photos.select{ |s| s.number == "photo8" }.first.photo.url(h: 280, fm: :jpg) %>');">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tas-testimonials-3">
+    <div class="tas-rotation-container tas-rotation-container-reverse">
+      <div class="tas-section-left">
+        <div class="tas-column tas-column-a">
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <div class="tas-box tas-box-small" style="background-image: url('../images/tas-box-background-small-white.png'), url('<%= dato.social_photos.select{ |s| s.number == "photo9" }.first.photo.url(h: 280, fm: :jpg) %>');">
+          </div>
+        </div>
+        <div class="tas-column tas-column-a">
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <div class="tas-box tas-box-small" style="background-image: url('../images/tas-box-background-small-white.png'), url('<%= dato.social_photos.select{ |s| s.number == "photoX" }.first.photo.url(h: 280, fm: :jpg) %>');">
+          </div>
+          <a href="<%= dato.testimonials.select{ |s| s.number == "reviewX" }.first.link %>" target="_blank" alt="See Full Review">
+            <div class="tas-box tas-box-large">
+              <div class="tas-box-text-container tas-box-text-container-large tas-box-text-container-testimonial">
+                <p>"<%= dato.testimonials.select{ |s| s.number == "reviewX" }.first.review %>"</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="tas-dividing-line">
+      </div>
+      <div class="tas-section-right">
+        <div class="tas-column tas-column-b">
+          <div class="tas-box tas-box-small tas-box-ghost">
+          </div>
+          <a href="<%= dato.testimonials.select{ |s| s.number == "review8" }.first.link %>" target="_blank" alt="See Full Review">
+            <div class="tas-box tas-box-large">
+              <div class="tas-box-text-container tas-box-text-container-large tas-box-text-container-testimonial">
+                <p>"<%= dato.testimonials.select{ |s| s.number == "review8" }.first.review %>"</p>
+              </div>
+            </div>
+          </a>
+          <a href="<%= dato.testimonials.select{ |s| s.number == "review9" }.first.link %>" target="_blank" alt="See Full Review">
+            <div class="tas-box tas-box-large">
+              <div class="tas-box-text-container tas-box-text-container-large tas-box-text-container-testimonial">
+                <p>"<%= dato.testimonials.select{ |s| s.number == "review9" }.first.review %>"</p>
+              </div>
+            </div>
+          </a>
+          <div class="tas-box tas-box-small" style="background-image: url('../images/tas-box-background-small-black.png'), url('<%= dato.social_photos.select{ |s| s.number == "photoXI" }.first.photo.url(h: 280, fm: :jpg) %>');">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="tas-section tas-footer-section" id="find-us-and-hours">
+  <div class="tas-rotation-container">
+    <div class="tas-section-left">
+      <div class="tas-column tas-column-a">
+        <div class="tas-box tas-box-small">
+          <div class="tas-box-text-container tas-box-text-container-small">
+            <p>Thursday</p>
+            <p>9 - 9</p>
+          </div>
+        </div>
+        <div class="tas-box tas-box-small tas-box-ghost">
+        </div>
+        <div class="tas-box tas-box-small tas-box-ghost">
+        </div>
+        <div class="tas-box tas-box-small tas-box-ghost">
+        </div>
+        <div class="tas-box tas-box-small tas-box-ghost">
+        </div>
+        <div class="tas-box tas-box-small">
+          <div class="tas-box-text-container tas-box-text-container-small">
+            <p class="tas-footer-small-print">&copy;<span class="tas-small-print-hider"> The</span> Aviary Salon <%= Time.now.strftime("%Y") %></p>
+          </div>
+        </div>
+      </div>
+      <div class="tas-column tas-column-a">
+        <div class="tas-box tas-box-small tas-box-ghost">
+        </div>
+        <div class="tas-box tas-box-extra-large tas-box-extra-large-google-map">
+          <div class="tas-box-text-container tas-box-text-container-extra-large tas-box-text-container-google-map">
+            <div class="tas-google-map-address tas-google-map-address-top">
+              <p>1617</p>
+              <p>London Road</p>
+              <p>Leigh-on-Sea SS9 2SQ</p>
+            </div>
+            <div class="tas-google-map-address tas-google-map-address-bottom">
+            </div>
+            <iframe class="tas-google-map" src="https://www.google.com/maps/embed?key=AIzaSyDDeuUSZ8IL7n5iPkdkFh-yr6Doqzsu8Hw&pb=!1m14!1m8!1m3!1d9924.4295789655!2d0.6373179!3d51.5479297!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xed091e6239b60472!2sThe+Aviary%2C+Hair+and+Beauty!5e0!3m2!1sen!2suk!4v1493895145978" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+      <div class="tas-column tas-column-a">
+        <div class="tas-box tas-box-small tas-box-ghost">
+        </div>
+        <div class="tas-box tas-box-small tas-box-ghost">
+        </div>
+        <div class="tas-box tas-box-small">
+          <div class="tas-box-text-container tas-box-text-container-small">
+            <p>Wednesday</p>
+            <p>9 - 9</p>
+          </div>
+        </div>
+        <div class="tas-box tas-box-small">
+          <div class="tas-box-text-container tas-box-text-container-small">
+            <p>Tuesday</p>
+            <p>9 - 6</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tas-dividing-line">
+    </div>
+    <div class="tas-section-right">
+      <div class="tas-column tas-column-b">
+        <div class="tas-box tas-box-small">
+          <div class="tas-box-text-container tas-box-text-container-small">
+            <p>Friday</p>
+            <p>9 - 6</p>
+          </div>
+        </div>
+        <div class="tas-box tas-box-small tas-box-ghost">
+        </div>
+        <div class="tas-box tas-box-small tas-box-ghost">
+        </div>
+        <div class="tas-box tas-box-small tas-box-ghost">
+        </div>
+        <div class="tas-box tas-box-small tas-box-ghost">
+        </div>
+        <div class="tas-box tas-box-small">
+          <div class="tas-box-text-container tas-box-text-container-small tas-box-text-container-design-credit">
+            <a href="https://leigh.webworkshop.ltd" title="Leigh Web Workshop" target="_blank">
+              <p class="tas-footer-small-print"><span class="tas-small-print-hider">Website Design &amp; Hosting by Leigh </span>Web Workshop</p>
+              <img class="ww-logo" src="../images/ww-logo.svg" alt="Web Workshop Logo">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="tas-column tas-column-b">
+      </div>
+      <div class="tas-column tas-column-b">
+        <div class="tas-box tas-box-small tas-box-ghost">
+        </div>
+        <div class="tas-box tas-box-small tas-box-ghost">
+        </div>
+        <div class="tas-box tas-box-small">
+          <div class="tas-box-text-container tas-box-text-container-small">
+            <p>Saturday</p>
+            <p>9 - 5</p>
+          </div>
+        </div>
+        <div class="tas-box tas-box-small tas-box-small-cross-out">
+          <div class="tas-box-text-container tas-box-text-container-small">
+            <p>Sunday</p>
+            <p>Monday</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="tas-contact-success-failure" id="success">
+  <div class="tas-contact-success-failure-item">
+    <p>Thank you for getting in touch! We will get back to you shortly.</p>
+    <a href="" alt="Close">
+      <%= partial "partials/icons/tas-escape-cross" %>
+    </a>
+  </div>
+</div>
+<div class="tas-contact-success-failure" id="oops">
+  <div class="tas-contact-success-failure-item">
+    <p>
+      Sorry, there was a problem with your contact form. Please try again or use
+      <a href="tel:01702716413" alt="Call Aviary Salon">phone</a>,
+      <a href="mailto:theaviarysalon@hotmail.com?Subject=Website%20Enquiry">email</a>,
+      <a class="tas-social-media-link" href="https://www.facebook.com/theaviarysalon/" alt="The Aviary Salon - Facebook" target="_blank">Facebook</a>
+      or <a class="tas-social-media-link" href="https://www.instagram.com/theaviarysalon/" alt="The Aviary Salon - Instagram" target="_blank">Instagram</a>
+      to get touch.
+    </p>
+    <a href="" alt="Close">
+      <%= partial "partials/icons/tas-escape-cross" %>
+    </a>
+  </div>
+</div>
